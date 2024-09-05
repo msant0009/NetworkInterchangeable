@@ -11,12 +11,25 @@ class UserListViewModel : ObservableObject {
     
     @Published var userList = [UserViewModel]()
     
-    let webservice = Webservice()
+   // let webservice = Webservice()
+    
+    // Since we are downloading from web or local, use private below instead of webservive
+    private var service : NetworkService
+        init(service: NetworkService){
+            self.service = service
+        }
+    
     
     func downloadUsers() async {
+        var resource = ""
         
+        if service.type == "Webservice" {
+            resource = Constants.Urls.userExtension
+        }else {
+            resource = Constants.Paths.baseUrl
+        }
         do {
-            let users = try await webservice.download(Constants.Urls.userExtension)
+            let users = try await service.download(resource)
             DispatchQueue.main.async {
                 self.userList = users.map(UserViewModel.init)
             }
