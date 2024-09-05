@@ -15,6 +15,8 @@
 		A341DD9F2C894906005870A5 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341DD9E2C894906005870A5 /* WebService.swift */; };
 		A341DDA22C894FF2005870A5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341DDA12C894FF2005870A5 /* UserViewModel.swift */; };
 		A341DDA52C8951CE005870A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341DDA42C8951CE005870A5 /* Constants.swift */; };
+		A365CB5E2C8A516B0082F1BD /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = A365CB5D2C8A516B0082F1BD /* users.json */; };
+		A365CB602C8A51920082F1BD /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A365CB5F2C8A51920082F1BD /* LocalService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		A341DD9E2C894906005870A5 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		A341DDA12C894FF2005870A5 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		A341DDA42C8951CE005870A5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A365CB5D2C8A516B0082F1BD /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		A365CB5F2C8A51920082F1BD /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		A341DD8B2C89487F005870A5 /* NetworkInterchangeable */ = {
 			isa = PBXGroup;
 			children = (
+				A365CB5D2C8A516B0082F1BD /* users.json */,
 				A341DDA32C8951B9005870A5 /* Constants */,
 				A341DDA02C894912005870A5 /* ViewModel */,
 				A341DD9D2C8948F0005870A5 /* Service */,
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A341DD9E2C894906005870A5 /* WebService.swift */,
+				A365CB5F2C8A51920082F1BD /* LocalService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A365CB5E2C8A516B0082F1BD /* users.json in Resources */,
 				A341DD942C894880005870A5 /* Preview Assets.xcassets in Resources */,
 				A341DD912C894880005870A5 /* Assets.xcassets in Resources */,
 			);
@@ -186,6 +193,7 @@
 				A341DD9F2C894906005870A5 /* WebService.swift in Sources */,
 				A341DDA22C894FF2005870A5 /* UserViewModel.swift in Sources */,
 				A341DD8D2C89487F005870A5 /* NetworkInterchangeableApp.swift in Sources */,
+				A365CB602C8A51920082F1BD /* LocalService.swift in Sources */,
 				A341DDA52C8951CE005870A5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
